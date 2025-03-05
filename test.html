@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span data-info="34" data-index="2" data-prefix="Dr. " data-emoji-icon="🏌️‍♀️">hello</span>
+    <img src="spaceship.png" data-ship-id="324" data-shields="72%" onclick="pewpew(this.dataset.shipId)">
+    </img>
+    <script>
+        var span = document.querySelector("span");
+        var img = document.querySelector("img");
+        alert(span.dataset.info);
+        alert(img.dataset.shipId);
+        alert(img.dataset.shields);
+    </script>
+</body>
+<!-- </html>
+@*<script>
+    $("#btn_save").click(function () {
+        alert("response")
+        var phase_a = "N/A";
+        var phase_b = "N/A";
+        var phase_c = "N/A";
+        if ($("#phase_status_a1").prop("checked"))
+            phase_a = "on";
+        if ($("#phase_status_a2").prop("checked"))
+            phase_a = "off";
+        if ($("#phase_status_a3").prop("checked"))
+            phase_a = "unused";
+        if ($("#phase_status_b1").prop("checked"))
+            phase_b = "on";
+        if ($("#phase_status_b2").prop("checked"))
+            phase_b = "off";
+        if ($("#phase_status_b3").prop("checked"))
+            phase_b = "unused";
+        if ($("#phase_status_c1").prop("checked"))
+            phase_c = "on";
+        if ($("#phase_status_c2").prop("checked"))
+            phase_c = "off";
+        if ($("#phase_status_c3").prop("checked"))
+            phase_c = "unused";
+        var data = {
+            "service_type": $("#service_type").val(),
+            "incedent_no": $("#incident_no").val(),
+            "account_no": $("#accno").val(),
+            "Substation": $("#substation").val(),
+            "name": $("#name").val(),
+            "meter_no": $("#meter").val(),
+            "feeder_no": $("#feeder_no").val(),
+            "phone_no": $("#phone_no").val(),
+            "caller_id": $("#callerid").val(),
+            "callback": $("#callback").val(),
+            "first_name": $("#fname").val(),
+            "last_name": $("#lname").val(),
+            "voice_message": $("#cph_body_txtvoicemsg").val(),
+            "line_section": $("#linesection").val(),
+            "pole": $("#pole").val(),
+            "map_location": $("#map_location").val(),
+            "district": $("#district").val(),
+            "phase_status_a": phase_a,
+            "phase_status_b": phase_b,
+            "phase_status_c": phase_c,
+            "cause": $('#selectcause').val(),
+            "assets": $('#assets').val(),
+            "assets_size": $('#assets_size').val(),
+            "assets_cost": $("#assets_cost").val(),
+            "entry_comment": $("#cph_body_txtenterycomment").val(),
+            "close_comment": $("#cph_body_txtclosecomment").val(),
+            "RUS_type": $('#cph_body_txtrustype').val(),
+            "dispatch_history": $('#dispatch_history').val(),
+            "notes_history": $('#cph_body_txtnotehistory').val(),
+            "start_time": $('#start_date').val(),
+            "end_time": $('#cph_body_txtclosedate').val(),
+            "duration": $('#cph_body_txtduration').val(),
+            "entered_by": $('#enterby').val(),
+            "entered_on": $('#cph_body_txton').val(),
+            "assign_to": $('#assign_to').val(),
+            "closed_by": $('#cph_body_txtcloseby').val(),
+            "outage_description": $('#outage_dec').val(),
+            "city": $('#city').val(),
+            "state": $('#state').val(),
+            "outage_id": $('#outage_id').val(),
+            "zip": $('#zip_code').val(),
+            "reading_date": $('#reading_dt').val(),
+            "email_id": $('#email').val(),
+            "user_name": $('#user_name').val(),
+            "EMP_ID": $('#emp_id').val(),
+            "LATITUDE": $('#latitude').val(),
+            "LONGITUDE": $('#longitude').val(),
+            "id": parseInt($("#id").val()),
+        };
+        $.ajax({
+            type: "POST",
+            url: "../api/Outage_api/updateReportById",
+            data: JSON.stringify(data),
+            contentType: "application/json; charset=utf-8",
+            dataType: "text",
+            success: function (response) {
+                debugger;
+                //var files = $('#files')[0].files;
+                //var formData = new FormData();
+                //$.each(files, function (index, file) {
+                //    formData.append('imageFile' + index, file);
+                //    console.log(file)
+                //});
+
+                ////formData.append("imageFile", $("#files")[0].files[0]);
+                //formData.append("incident", $("#incident_no").val());
+                //$.ajax({
+                //    type: "POST",
+                //    url: "../api/Outage_api/outageimageUpload",
+                //    data: formData,
+                //    dataType: "text",
+                //    contentType: false,  // Let jQuery handle the contentType
+                //    processData: false,
+                //    success: function (response) {
+                //        //$("#success_msg").show();
+                //        //$("#success_msg").css("opacity", "1");
+                //        //setTimeout(() => {
+                //        //    $("#success_msg").hide();
+                //        //    $("#success_msg").css("opacity", "0");
+                //        //    window.location.href = "../home/outage_reprting";
+                //        //}, 2000);
+                //    },
+                //    error: function (error) {
+                //        debugger;
+                //        console.log(error);
+                //    }
+                //});
+              
+            },
+            error: function (error) {
+                //alert(error)
+                console.log("outside ajax error");
+            }
+        });
+    });
+</script>*@ -->
