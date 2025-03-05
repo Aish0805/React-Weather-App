@@ -11,7 +11,7 @@ import snow_icon from '../Assets/snow.png'
 
 const WeatherApp = () => {
 
-    let api_key = 'aa1a2d7f51144021c88634b93ab96ae8';
+    let api_key = 'enter your api key here';
     const [wicon, setWicon] = useState(cloud_icon)
 
     const search = async () => {
